@@ -218,12 +218,17 @@ section > p {
 
 #contact {
     background-color: #e8ecff;
+    text-align: center;
+    padding: 60px 10%;
+}
 
+#contact h2 {
     text-align: center;
 }
 
 #contact p {
-    margin: 10px;
+    text-align: center;
+    margin: 12px auto;
 }
 
 #contact a {
