@@ -218,17 +218,26 @@ section > p {
 
 #contact {
     background-color: #e8ecff;
-    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     padding: 60px 10%;
 }
 
 #contact h2 {
     text-align: center;
+    color: #374785;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
 #contact p {
+    width: 100%;
+    max-width: 100%;
     text-align: center;
-    margin: 12px auto;
+    margin: 12px 0;
 }
 
 #contact a {
