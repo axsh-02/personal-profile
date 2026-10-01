@@ -1,0 +1,275 @@
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: #4b6cb7;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffd6e7;
+}
+
+
+/* Profile Section */
+
+.profile {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 60px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #fce7f3
+    );
+}
+
+.profile img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile h1 {
+    font-size: 48px;
+    color: #374785;
+}
+
+.profile p {
+    max-width: 550px;
+    margin: 15px 0 25px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    background-color: #4b6cb7;
+    color: white;
+
+    padding: 10px 22px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #374785;
+}
+
+
+/* Sections */
+
+section {
+    padding: 60px 10%;
+}
+
+section h2 {
+    text-align: center;
+    color: #374785;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+section > p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Cards */
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.card h3 {
+    color: #4b6cb7;
+
+    margin-bottom: 10px;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.skill {
+    background-color: #dbeafe;
+
+    color: #374785;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    border: 1px solid #b8cff5;
+}
+
+
+/* Interest Cards */
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    width: 280px;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+
+/* Contact */
+
+#contact {
+    background-color: #e8ecff;
+
+    text-align: center;
+}
+
+#contact p {
+    margin: 10px;
+}
+
+#contact a {
+    color: #4b6cb7;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #374785;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile h1 {
+        font-size: 38px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
